@@ -42,13 +42,13 @@ Wait for the installation to finish before installing another package.
 
 After all packages are installed, the databases must be prepared/downloaded.
 
-Meuse -> Available in the "sp" package
-Coalash -> Available in the "gstat" package
-Broomsbarn ->  http://www.kriging.com/datasets/ (Arquivo BroomsBarn.dat)
-Wolfcamp -> http://www.kriging.com/datasets/ (Arquivo Wolfcamp.dat)
-Walkerlake -> Available in the "gstat" package
+1. Meuse -> Available in the "sp" package
+2. Coalash -> Available in the "gstat" package
+3. Broomsbarn ->  http://www.kriging.com/datasets/ (Arquivo BroomsBarn.dat)
+4. Wolfcamp -> http://www.kriging.com/datasets/ (Arquivo Wolfcamp.dat)
+5. Walkerlake -> Available in the "gstat" package
 
-"Broomsbarn.dat" and "Wolfcamp.dat" must be included in the same path/directory of the script (GAClusterKriging.R) file
+"__Broomsbarn.dat__" and "__Wolfcamp.dat__" must be included in the same path/directory of the script (GAClusterKriging.R) file
 
 After theses steps, you may run the code!
 
@@ -56,23 +56,18 @@ After theses steps, you may run the code!
 
 Open the script (GAClusterKriging.R) File in the RSTUDIO software.
 
-BEFORE RUNNING ANY TESTS, MAKE SURE TO FOLLOW THESE STEPS:
+__BEFORE RUNNING ANY TESTS, MAKE SURE TO FOLLOW THESE STEPS:__
 
- --> In the toolbar select "Session", "Set Working Directory", "To Source File Location";
- --> In the toolbar select "Session", "Clear Workspace";
+ - In the toolbar select "Session", "Set Working Directory", "To Source File Location";
+ - In the toolbar select "Session", "Clear Workspace";
 
 To RUN the tests, first the database must be selected in the section bellow!
 
-############ DATABASE SELECT ###############
-# 1 - Meuse, 2 - Wolfcamp, 3 - Broomsbarn, 4 - Coalash, 5 - WalkerLake
-databases = c("meuse","wolfcamp","broomsbarn","coalash","walkerlake")
-databaseSelected = databases[1]
+![Alt text](/code1.png?raw=true "Optional Title")
 
 Next, type the name of the output file and the number of tests that will be applied to each cluster.
 
-######### VARIABLES INIT ###########
-outputFileName = "TestLog.txt"
-nTestsForEachCluster = 5
+![Alt text](/code2.png?raw=true "Optional Title")
 
 Next, select the size of the Genetic Algorithm Population and Number of Iterations.
 
