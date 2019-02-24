@@ -19,19 +19,20 @@ The installation is simple and can be done with all default selections by pressi
 After the installation is complete, it is necessary to install the packages included in the scripts of the project.
 
 To install packages, select the "Tools" option in the menu and "Install Packages". 
-In the text "Packages", type the following packages and press the button "Install". Wait for the installation to finish before installing another package.
+In the text field "Packages", type the following packages and press the button "Install". 
+Wait for the installation to finish before installing another package.
 
-gstat   
-sp  
-automap
-GA
-reshape
-NISTunits
-SearchTrees
-RGeostats
-fpc
-outliers
-scales
+ -- gstat   
+ -- sp  
+ -- automap
+ -- GA
+ -- reshape
+ -- NISTunits
+ -- SearchTrees
+ -- RGeostats
+ -- fpc
+ -- outliers
+ -- scales
 
 After all packages are installed, the databases must be prepared/downloaded.
 
@@ -47,13 +48,12 @@ After theses steps, you may run the code!
 
 ## Running the tests
 
-Open the script File in the RSTUDIO software.
+Open the script (GAClusterKriging.R) File in the RSTUDIO software.
 
 BEFORE RUNNING ANY TESTS, MAKE SURE TO FOLLOW THESE STEPS:
 
  --> In the toolbar select "Session", "Set Working Directory", "To Source File Location";
  --> In the toolbar select "Session", "Clear Workspace";
-
 
 To RUN the tests, first the database must be selected in the section bellow!
 
