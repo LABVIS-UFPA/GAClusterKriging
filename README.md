@@ -79,33 +79,10 @@ Finally, select the number of clusters of the K-Means Method.
 
 ### Tests Results
 
-The tests will be avaiable in the 
-
-CLUSTER ---------- 1
-                   GA --- GA2 -- LS1 -- ILS -- ILS2           
-Iteration: 1              0.3455 0.3604 0.3797 0.3896 0.3806                
-Iteration: 2              0.3503 0.3606 0.3797 0.3896 0.3806                
-Mean:   0.3479 0.3605 0.3797 0.3896 0.3806
-Stand. Deviation:   0.0035 1e-04 0 0 0
-CLUSTER ---------- 2
-                   GA --- GA2 -- LS1 -- ILS -- ILS2           
-Iteration: 1              0.3315 0.3717 0.398 0.3872 0.3872                
-Iteration: 2              0.3323 0.3717 0.398 0.3872 0.3872                
-Mean:   0.3319 0.3717 0.398 0.3872 0.3872
-Stand. Deviation:   6e-04 0 0 0 0
+The output text file will be created in the directory of the R script file. 
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **Carlos Yasojima** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
+takeshiyasojima@gmail.com
