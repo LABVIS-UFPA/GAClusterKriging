@@ -28,18 +28,17 @@ In the text field "Packages", type the following packages and press the button "
 
 Wait for the installation to finish before installing another package.
 
- -- gstat   
- -- sp  
- -- automap
- 
- -- GA
- -- reshape
- -- NISTunits
- -- SearchTrees
- -- RGeostats
- -- fpc
- -- outliers
- -- scales
+ - gstat   
+ - sp  
+ - automap
+ - GA
+ - reshape
+ - NISTunits
+ - SearchTrees
+ - RGeostats
+ - fpc
+ - outliers
+ - scales
 
 After all packages are installed, the databases must be prepared/downloaded.
 
