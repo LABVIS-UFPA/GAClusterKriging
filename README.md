@@ -83,6 +83,6 @@ The output text file will be created in the directory of the R script file.
 
 ## Authors
 
-* **Carlos Yasojima** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **Carlos Yasojima**
 
 takeshiyasojima@gmail.com
