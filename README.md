@@ -93,6 +93,8 @@ Then, iterations for each number of clusters are listed.
 
 ![Alt text](/img/outputfile.png?raw=true "Optional Title")
 
+Each column represent an algorithm, and every line represent a test or iteration.
+At the end, the mean and standart deviation are calculated. This is repeated from 1 to the selected number of clusters.
 
 ## Authors
 
