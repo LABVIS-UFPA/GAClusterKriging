@@ -34,8 +34,8 @@ outputFileName = "TestLog.txt"
 nTestsForEachCluster = 5
 
 ############ AG PARAMETERS #################
-gaPopulation = 100
-gaIter = 10
+gaPopulation = 50
+gaIter = 3
 
 ############ KNN PARAMETERS ################
 # Neighbours = 4 means 3 neighbours ########
@@ -520,7 +520,7 @@ for(z in 1:nCluster) {
   cat("CLUSTER ---------- ")
   cat(z)
   cat("\n")
-  cat("                   GA --- GA2 -- LS1 -- ILS -- ILS2           ")
+  cat("                          GA --- GA2 -- LM -- ILS -- ILS2           ")
   cat("\n")
   sink()
   
