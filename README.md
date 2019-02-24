@@ -20,11 +20,11 @@ After the installation is complete, it is necessary to install the packages incl
 
 To install packages, select the "Tools" option in the menu and "Install Packages". 
 
-![Alt text](/toolsInstallPackages.png?raw=true "Optional Title")
+![Alt text](/img/toolsInstallPackages.png?raw=true "Optional Title")
 
 In the text field "Packages", type the following packages and press the button "Install". 
 
-![Alt text](/toolsInstallPackages2.png?raw=true "Optional Title")
+![Alt text](/img/toolsInstallPackages2.png?raw=true "Optional Title")
 
 Wait for the installation to finish before installing another package.
 
@@ -63,31 +63,19 @@ __BEFORE RUNNING ANY TESTS, MAKE SURE TO FOLLOW THESE STEPS:__
 
 To RUN the tests, first the database must be selected in the section bellow!
 
-![Alt text](/code1.png?raw=true "Optional Title")
+![Alt text](/img/code1.png?raw=true "Optional Title")
 
 Next, type the name of the output file and the number of tests that will be applied to each cluster.
 
-![Alt text](/code2.png?raw=true "Optional Title")
+![Alt text](/img/code2.png?raw=true "Optional Title")
 
 Next, select the size of the Genetic Algorithm Population and Number of Iterations.
-
-############ AG PARAMETERS #################
-gaPopulation = 100
-gaIter = 10
-
 Next, select the number of neighbours considered in the KNN method.
 Is important to note that the number is N-1, because the closest point, is the point itself.
 So if you want 3 neighbours, you must type 4.
-
-############ KNN PARAMETERS ################
-# Neighbours = 4 means 3 neighbours ########
-# Cause the closes is the point itself #####
-nNeighbours = 4  
-
 Finally, select the number of clusters of the K-Means Method.
 
-############ K-MEANS PARAMTERS #############
-kmeansClusters = 6
+![Alt text](/img/code3.png?raw=true "Optional Title")
 
 ### Tests Results
 
