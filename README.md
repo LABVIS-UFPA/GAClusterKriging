@@ -77,6 +77,12 @@ Finally, select the number of clusters of the K-Means Method.
 
 ![Alt text](/img/code3.png?raw=true "Optional Title")
 
+Finally, save the file and click on the "Source" Button to run the script.
+
+![Alt text](/img/code4.png?raw=true "Optional Title")
+
+The execution can be time demanding depending on the database.
+
 ### Tests Results
 
 The output text file will be created in the directory of the R script file. 
