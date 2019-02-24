@@ -44,8 +44,8 @@ After all packages are installed, the databases must be prepared/downloaded.
 
 1. Meuse -> Available in the "sp" package
 2. Coalash -> Available in the "gstat" package
-3. Broomsbarn ->  http://www.kriging.com/datasets/ (Arquivo BroomsBarn.dat)
-4. Wolfcamp -> http://www.kriging.com/datasets/ (Arquivo Wolfcamp.dat)
+3. Broomsbarn ->  http://www.kriging.com/datasets/ (Arquivo BroomsBarn.dat) or in this repository
+4. Wolfcamp -> http://www.kriging.com/datasets/ (Arquivo Wolfcamp.dat) or in this repository
 5. Walkerlake -> Available in the "gstat" package
 
 "__Broomsbarn.dat__" and "__Wolfcamp.dat__" must be included in the same path/directory of the script (GAClusterKriging.R) file
