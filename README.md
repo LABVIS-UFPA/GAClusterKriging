@@ -1,7 +1,7 @@
 # GAClusterKriging
 
 This project refers to the scripts used in the paper
-"A New Methodology for Automatic Cluster-Based Kriging using K-Nearest Neighbour and Genetic Algorithms"
+"__A New Methodology for Automatic Cluster-Based Kriging using K-Nearest Neighbour and Genetic Algorithms__"
 
 ## Getting Started
 
