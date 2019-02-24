@@ -34,8 +34,8 @@ outputFileName = "TestLog.txt"
 nTestsForEachCluster = 5
 
 ############ AG PARAMETERS #################
-gaPopulation = 50
-gaIter = 3
+gaPopulation = 100
+gaIter = 10
 
 ############ KNN PARAMETERS ################
 # Neighbours = 4 means 3 neighbours ########
