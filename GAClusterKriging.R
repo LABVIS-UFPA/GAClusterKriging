@@ -17,20 +17,25 @@ library(outliers)
 library(scales)
 
 ############ DATABASE SELECT ###############
+# 1 - Meuse, 2 - Wolfcamp, 3 - Broomsbarn, 4 - Coalash, 5 - WalkerLake
 databases = c("meuse","wolfcamp","broomsbarn","coalash","walkerlake")
 databaseSelected = databases[1]
 
-############ VARIABLES INIT ################
+######### VARIABLES INIT (FIXED) ###########
 model1 = "exponential"
 model2 = "Exp"
 model3 = "Exponential"
-trainDataSize = 1  #Percentage of train Data
-nTestsForEachCluster = 1
-outputFileName = "Test.txt"
+trainDataSize = 1  
+sillMultiplier = 5
+nlags = 20
+
+######### VARIABLES INIT ###########
+outputFileName = "TestLog.txt"
+nTestsForEachCluster = 5
 
 ############ AG PARAMETERS #################
-gaPopulation = 100
-gaIter = 10
+gaPopulation = 50
+gaIter = 3
 
 ############ KNN PARAMETERS ################
 # Neighbours = 4 means 3 neighbours ########
@@ -38,7 +43,7 @@ gaIter = 10
 nNeighbours = 4  
 
 ############ K-MEANS PARAMTERS #############
-kmeansClusters = 6
+kmeansClusters = 3
 
 ############################################################################################################################################
 
@@ -179,13 +184,13 @@ gaOptim = function(optimData, nCluster, krigVar, popSize, generations, model) {
   columnIndex = which(colnames(optimData@data)==krigVar)
   
   maxSill = var(optimData@data[,columnIndex])
-  maxSill = maxSill * 5
+  maxSill = maxSill * sillMultiplier
   print(maxSill)
   maxNugget = 0
   distances = dist(optimData@coords)
   maxRange = max(distances)
   
-  lags = 20
+  lags = nlags
   w = maxRange/lags
   
   var = paste(krigVar, '~ 1')
@@ -250,11 +255,11 @@ gaOptim2 = function(optimData, nCluster, krigVar, popSize, generations, model) {
   columnIndex = which(colnames(optimData@data)==krigVar)
   
   maxSill = var(optimData@data[,columnIndex])
-  maxSill = maxSill * 5
+  maxSill = maxSill * sillMultiplier
   maxNugget = 0
   distances = dist(optimData@coords)
   maxRange = max(distances)
-  lags = 20
+  lags = nlags
   w = maxRange/lags
   
   var = paste(krigVar, '~ 1')
@@ -338,11 +343,11 @@ lsOptim1 = function(optimData, nCluster, krigVar, model) {
     initialRange = max(distances)
     print(initialRange)
     
-    lags = 20
+    lags = nlags
     w = initialRange/lags
     
     lzn.vgm = variogram(var, optimBase, cutoff = initialRange, width = w) 
-    lzn.fit = fit.variogram(lzn.vgm, vgm(psill = initialSill, model = model2, range = initialRange/100, nugget = initialNugget), fit.sills = c(FALSE,TRUE))
+    lzn.fit = fit.variogram(lzn.vgm, vgm(psill = initialSill, model = model2, range = initialRange/2, nugget = initialNugget), fit.sills = c(FALSE,TRUE))
     xValid = krige.cv(var, optimBase, model=lzn.fit) 
     
     LSSolutions[i,] = c(lzn.fit$psill[1], lzn.fit$psill[2], lzn.fit$range[2])
@@ -375,7 +380,7 @@ iterativeLsOptim = function(optimData, nCluster, krigVar, model, model2) {
     
     temp = get(paste0("cluster", i))
     
-    variogram = vario.calc(temp, nlag=20)
+    variogram = vario.calc(temp, nlag=nlags)
     
     fit.model = model.auto(variogram, struct=(c(model2)), 
                            maxiter = 10000, title="Anisotropic Variogram to be Fitted", auth.aniso = TRUE)
@@ -420,7 +425,7 @@ iterativeLsOptim2 = function(optimData, nCluster, krigVar, model, model2) {
     
     temp = get(paste0("cluster", i))
     
-    variogram = vario.calc(temp, nlag=20, dirvect = c(0,45,90,135))
+    variogram = vario.calc(temp, nlag=nlags, dirvect = c(0,45,90,135))
     
     fit.model = model.auto(variogram, struct=(c(model2)), 
                            maxiter = 10000, title="Anisotropic Variogram to be Fitted", auth.aniso = TRUE, auth.lock2d = TRUE)
@@ -561,7 +566,7 @@ for(z in 1:nCluster) {
     cat("\n")
     if(i == nTests) {
       cat("Mean: ")
-      cat("  ")
+      cat("                    ")
       try(cat(round(mean(GA1Results[,1]),4)))
       GA1ResultsMeans[z,1] = try(round(mean(GA1Results[,1]),4))
       cat(" ")
@@ -580,7 +585,7 @@ for(z in 1:nCluster) {
       cat("\n")
       
       cat("Stand. Deviation: ")
-      cat("  ")
+      cat("        ")
       try(cat(round(sd(GA1Results[,1]),4)))
       GA1ResultsSd[z,1] = try(round(sd(GA1Results[,1]),4))
       cat(" ")
