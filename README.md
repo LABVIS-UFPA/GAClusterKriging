@@ -18,7 +18,7 @@ The version 1.2.931 was used in the development of the scripts.
 The installation is simple and can be done with all default selections by pressing the Next Button.
 After the installation is complete, it is necessary to install the packages included in the scripts of the project.
 
-![Alt text](/relative/toolsInstallPackages.png?raw=true "Optional Title")
+![Alt text](/toolsInstallPackages.png?raw=true "Optional Title")
 
 To install packages, select the "Tools" option in the menu and "Install Packages". 
 In the text field "Packages", type the following packages and press the button "Install". 
