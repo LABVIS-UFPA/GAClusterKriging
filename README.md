@@ -18,10 +18,14 @@ The version 1.2.931 was used in the development of the scripts.
 The installation is simple and can be done with all default selections by pressing the Next Button.
 After the installation is complete, it is necessary to install the packages included in the scripts of the project.
 
+To install packages, select the "Tools" option in the menu and "Install Packages". 
+
 ![Alt text](/toolsInstallPackages.png?raw=true "Optional Title")
 
-To install packages, select the "Tools" option in the menu and "Install Packages". 
 In the text field "Packages", type the following packages and press the button "Install". 
+
+![Alt text](/toolsInstallPackages2.png?raw=true "Optional Title")
+
 Wait for the installation to finish before installing another package.
 
  -- gstat   
