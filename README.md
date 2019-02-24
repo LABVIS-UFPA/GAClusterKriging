@@ -87,6 +87,13 @@ The execution can be time demanding depending on the database.
 
 The output text file will be created in the directory of the R script file. 
 
+At the header, informations about the selected parameters are shown.
+
+Then, iterations for each number of clusters are listed. 
+
+![Alt text](/img/outputfile.png?raw=true "Optional Title")
+
+
 ## Authors
 
 * **Carlos Yasojima**
