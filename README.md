@@ -25,6 +25,7 @@ Wait for the installation to finish before installing another package.
  -- gstat   
  -- sp  
  -- automap
+ 
  -- GA
  -- reshape
  -- NISTunits
