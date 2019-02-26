@@ -19,7 +19,7 @@ library(scales)
 ############ DATABASE SELECT ###############
 # 1 - Meuse, 2 - Wolfcamp, 3 - Broomsbarn, 4 - Coalash, 5 - WalkerLake
 databases = c("meuse","wolfcamp","broomsbarn","coalash","walkerlake")
-databaseSelected = databases[1]
+databaseSelected = databases[2]
 
 ######### VARIABLES INIT (FIXED) ###########
 model1 = "exponential"
@@ -31,11 +31,11 @@ nlags = 20
 
 ######### VARIABLES INIT ###########
 outputFileName = "TestLog.txt"
-nTestsForEachCluster = 5
+nTestsForEachCluster = 3
 
 ############ AG PARAMETERS #################
 gaPopulation = 80
-gaIter = 4
+gaIter = 3
 
 ############ KNN PARAMETERS ################
 # Neighbours = 4 means 3 neighbours ########
