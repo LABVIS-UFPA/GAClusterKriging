@@ -92,7 +92,7 @@ Save the file and click on the "Source" Button to run the script.
 
 ![Alt text](/img/code4.png?raw=true "Optional Title")
 
-The execution can be time demanding depending on the database.
+The execution can be time demanding depending on the parameters and database.
 
 ### Tests Results
 
