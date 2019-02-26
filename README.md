@@ -22,12 +22,11 @@ To install packages, select the "Tools" option in the menu and "Install Packages
 
 ![Alt text](/img/toolsInstallPackages.png?raw=true "Optional Title")
 
-In the text field "Packages", type the following packages and press the button "Install". 
+In the text field "Packages", type each of the following packages listed below and press the button "Install". 
 
 ![Alt text](/img/toolsInstallPackages2.png?raw=true "Optional Title")
 
-Wait for the installation to finish before installing another package.
-
+Here are the packages that must be installed:
  - gstat   
  - sp  
  - automap
@@ -35,10 +34,16 @@ Wait for the installation to finish before installing another package.
  - reshape
  - NISTunits
  - SearchTrees
- - RGeostats
  - fpc
  - outliers
  - scales
+ - RGeostats (Must be manually Installed)
+ 
+The package RGeostats (Version used was 11.2.3), can be downloaded in the link: http://rgeostats.free.fr/forum/viewtopic.php?f=2&t=48 or in this github repository. It must be installed manually, since is not avaiable in the CRAN Repository.
+
+To install the package, in the same "Install Packages" window, choose to "install from" Package archive file, and select the .zip/.rar RGeostats file and press "install".
+
+![Alt text](/img/toolsInstallPackages3.png?raw=true "Optional Title")
 
 After all packages are installed, the databases must be prepared/downloaded.
 
