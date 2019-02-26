@@ -57,9 +57,9 @@ After all packages are installed, the databases must be prepared/downloaded.
 
 Ex:
 
-somePath/Files/GAClusterKriging.R
-somePath/Files/Broomsbarn.dat
-somePath/Files/WOLFCAMP.dat
+- somePath/Files/GAClusterKriging.R
+- somePath/Files/Broomsbarn.dat
+- somePath/Files/WOLFCAMP.dat
 
 After theses steps, you may run the code!
 
